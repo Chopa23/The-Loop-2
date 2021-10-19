@@ -1,8 +1,4 @@
-body {
-  background-color: red;
-}
-
-input {
-  background-color: yellow;
-  padding: 20px;
-}
+@import "globals";
+@import "blocks/container";
+@import "blocks/header";
+@import "blocks/menu";
