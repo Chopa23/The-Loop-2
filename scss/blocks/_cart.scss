@@ -1,27 +1,36 @@
 @import "../vars";
 
 .cart {
+  &__link {
+    display: flex;
+    align-items: center;
+  }
   & a {
     text-decoration: none;
   }
   & img {
-    margin-right: 15px;
+    margin-right: 35px;
   }
   &__informer {
     position: relative;
-    display: inline-block;
+    margin-left: 10px;
+    padding: 3px 13px;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 1;
+    color: $light;
     background-color: $accent-color;
-    padding: 5px 13px;
-    font-size: 12px;
-    line-height: 12px;
+
     &::before {
       position: absolute;
+      left: -11px;
+      top: 0;
       content: "";
       width: 0;
       height: 0;
-      border-left: 5px solid $accent-color;
-      border-top: 5px solid transparent;
-      border-bottom: 5px solid transparent;
+      border-top: 8px solid transparent;
+      border-right: 11px solid $accent-color;
+      border-bottom: 8px solid transparent;
     }
   }
 }
