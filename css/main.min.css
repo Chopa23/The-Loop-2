@@ -16,6 +16,19 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  border: 0;
+}
+
 .container {
   max-width: 1140px;
   padding: 0 15px;
@@ -50,6 +63,10 @@ body {
   max-width: 445px;
 }
 
+.header__menu-item:hover .header__submenu {
+  display: block;
+}
+
 .header__submenu {
   position: absolute;
   margin: 0;
@@ -58,6 +75,7 @@ body {
   background-color: #d7b399;
   width: 100%;
   z-index: 2;
+  display: none;
 }
 
 .header__submenu__item {
@@ -65,6 +83,26 @@ body {
   text-decoration: none;
   display: block;
   padding: 0.8em 0.3em;
+}
+
+.header__link {
+  position: relative;
+}
+
+.header__link-item {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.03em;
+  color: #000;
+  text-decoration: none;
+  padding: 1em 0;
+  margin-right: 35px;
+}
+
+.header__link:last-child {
+  margin-right: 0;
 }
 
 .menu {
@@ -81,7 +119,6 @@ body {
   position: relative;
   padding: 1em 0;
   margin-right: 35px;
-  width: 95px;
 }
 
 .menu__item:last-child {
@@ -110,4 +147,31 @@ body {
   border-top: 5px solid #000;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
+}
+
+.cart a {
+  text-decoration: none;
+}
+
+.cart img {
+  margin-right: 15px;
+}
+
+.cart__informer {
+  position: relative;
+  display: inline-block;
+  background-color: #d7b399;
+  padding: 5px 13px;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.cart__informer::before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 5px solid #d7b399;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
 }
