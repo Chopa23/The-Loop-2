@@ -14,7 +14,18 @@
     max-width: 445px;
   }
   &__submenu {
-    display: none;
     position: absolute;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: $accent-color;
+    width: 100%;
+    z-index: 2;
+    &__item {
+      color: $dark;
+      text-decoration: none;
+      display: block;
+      padding: 0.8em 0.3em;
+    }
   }
 }
