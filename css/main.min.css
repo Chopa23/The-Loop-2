@@ -78,7 +78,7 @@ body {
   display: none;
 }
 
-.header__submenu__item {
+.header__submenu-item {
   color: #000;
   text-decoration: none;
   display: block;
@@ -189,4 +189,42 @@ body {
   border-top: 8px solid transparent;
   border-right: 11px solid #d7b399;
   border-bottom: 8px solid transparent;
+}
+
+.slider {
+  background-color: #f9f6f1;
+}
+
+.slider__inner {
+  padding-top: 161px;
+}
+
+.slider__item-inner {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.slider__text {
+  width: 50%;
+}
+
+.slider__img {
+  width: 50%;
+}
+
+.slider__price {
+  position: absolute;
+  right: 0;
+  max-width: 255px;
+}
+
+.slider__old-price, .slider__new-price {
+  display: block;
+}
+
+.slick-dots {
+  text-decoration: none;
 }
