@@ -13,6 +13,22 @@
     order: -1;
     max-width: 445px;
   }
+
+  &__link-item {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.03em;
+    color: $dark;
+    text-decoration: none;
+    padding: 1em 0;
+    margin-right: 35px;
+  }
+  &__link-item:last-child {
+    margin-right: 0;
+  }
+
   &__menu-item {
     &:hover .header__submenu {
       display: block;
@@ -29,29 +45,19 @@
     display: none;
 
     &-item {
-      color: $dark;
-      text-decoration: none;
       display: block;
       padding: 0.8em 0.3em;
     }
-  }
 
-  &__link {
-    position: relative;
-
-    &-item {
-      font-family: Montserrat;
-      font-weight: 500;
-      font-size: 14px;
-      line-height: 17px;
-      letter-spacing: 0.03em;
+    &-link {
+      position: relative;
       color: $dark;
       text-decoration: none;
-      padding: 1em 0;
-      margin-right: 35px;
-    }
-    &:last-child {
-      margin-right: 0;
+      align-items: center;
+      padding: 0.3em;
+      &:hover {
+        background-color: $light;
+      }
     }
   }
 }

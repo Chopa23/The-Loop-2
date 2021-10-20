@@ -1,0 +1,16 @@
+@import "../vars";
+
+.btn {
+  display: block;
+  margin-top: 55px;
+  width: 240px;
+  height: 55px;
+  background-color: $accent-color;
+  text-align: center;
+  padding-top: 17px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $light;
+  letter-spacing: 0.03em;
+  line-height: 20px;
+}
