@@ -1,0 +1,95 @@
+@import "../vars";
+
+.catalog {
+  &__top {
+    padding-top: 60px;
+    background-color: $secondary-color;
+  }
+  &__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  &__top-column {
+    max-height: 250px;
+    background-image: url(/images/men.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    padding-right: 15px;
+  }
+
+  &__top-column--men {
+    background-position: right bottom;
+    padding-left: 45px;
+  }
+
+  &__top-column--women {
+    background-image: url(/images/women.png);
+    background-position: right bottom;
+    padding-right: 44px;
+    padding-left: 45px;
+  }
+  &__title {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.03em;
+    color: $dark;
+    & span {
+      font-family: Montserrat;
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 29px;
+      letter-spacing: 0.03em;
+      color: $dark;
+    }
+  }
+  &__collection {
+    font-family: Montserrat;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    color: $dark;
+  }
+  &__btn {
+    padding: 5px 10px;
+    width: 80px;
+    height: 30px;
+    margin-bottom: 58px;
+  }
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: #f4f4f4;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  &__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  &__item-title {
+    position: absolute;
+    bottom: 24px;
+    left: 30px;
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 26px;
+    letter-spacing: 0.03em;
+    color: $dark;
+  }
+
+  &__item-title a {
+    color: $dark;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  &__item-img {
+    max-width: 277px;
+  }
+}

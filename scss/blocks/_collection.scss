@@ -1,0 +1,48 @@
+@import "../vars";
+.collection {
+  &__inner {
+    padding: 152px 0;
+    text-align: center;
+  }
+  &__title {
+    margin: 0 0 100px 0;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $dark;
+    text-align: center;
+  }
+  &__btn {
+    position: relative;
+    margin-top: 103px;
+    padding-right: 64px;
+    margin-left: 850px;
+  }
+  &__btn::after {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 8px;
+    right: 35px;
+    top: 21px;
+    background-image: url("/images/Arrow.svg");
+    background-position: center;
+  }
+  .collection__price {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: $accent-color;
+  }
+  &__link {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: $dark;
+  }
+}
