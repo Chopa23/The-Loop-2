@@ -202,6 +202,7 @@ body {
 
 .slider {
   background-color: #f9f6f1;
+  padding-bottom: 72px;
 }
 
 .slider__inner {
@@ -321,4 +322,39 @@ body {
   color: #fff;
   letter-spacing: 0.03em;
   line-height: 20px;
+}
+
+.info {
+  background-color: #000;
+  color: #fff;
+}
+
+.info__inner {
+  max-width: 590px;
+  margin: 0 auto;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.info__title {
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 37px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #fff;
+}
+
+.info__title span {
+  font-weight: 300;
+}
+
+.info__text {
+  font-family: Montserrat;
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+  color: #fff;
 }
