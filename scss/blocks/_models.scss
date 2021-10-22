@@ -7,10 +7,12 @@
   grid-gap: 30px;
   grid-template-columns: repeat(4, 1fr);
   text-align: center;
+
   &__item {
     position: relative;
     padding: 25px;
     border: 3px solid $accent-color;
+    text-decoration: none;
 
     &::before {
       content: "";
@@ -32,5 +34,29 @@
       background-color: transparent;
       border: solid #fff;
     }
+  }
+  & h3 {
+    position: relative;
+    padding: 0 2em;
+    z-index: 2;
+  }
+
+  & h3 a {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: $dark;
+    text-decoration: none;
+  }
+
+  &__price {
+    margin-top: 40px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: $accent-color;
   }
 }

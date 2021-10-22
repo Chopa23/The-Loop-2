@@ -489,8 +489,7 @@ body {
 .collection__btn {
   position: relative;
   margin-top: 103px;
-  padding-right: 64px;
-  margin-left: 850px;
+  margin-left: 450px;
 }
 
 .collection__btn::after {
@@ -502,23 +501,6 @@ body {
   top: 21px;
   background-image: url("/images/Arrow.svg");
   background-position: center;
-}
-
-.collection .collection__price {
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 22px;
-  text-align: center;
-  color: #d7b399;
-}
-
-.collection__link {
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 17px;
-  text-align: center;
-  color: #000;
 }
 
 .models {
@@ -537,6 +519,7 @@ body {
   position: relative;
   padding: 25px;
   border: 3px solid #d7b399;
+  text-decoration: none;
 }
 
 .models__item::before {
@@ -559,4 +542,97 @@ body {
   position: absolute;
   background-color: transparent;
   border: solid #fff;
+}
+
+.models h3 {
+  position: relative;
+  padding: 0 2em;
+  z-index: 2;
+}
+
+.models h3 a {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #000;
+  text-decoration: none;
+}
+
+.models__price {
+  margin-top: 40px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #d7b399;
+}
+
+.subscribe {
+  margin: 0;
+  padding: 0;
+}
+
+.subscribe__inner {
+  max-width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 575px 550px;
+      grid-template-columns: 575px 550px;
+  grid-gap: 65px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.subscribe__title {
+  text-align: left;
+}
+
+.subscribe__form {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.subscribe__btn {
+  margin-top: 0 auto;
+}
+
+.subscribe__email {
+  width: 255px;
+  height: 40px;
+  margin-right: 35px;
+  padding: 13px 20px;
+  background-color: #fff;
+  border: none;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #f9f6f1;
+  text-align: left;
+}
+
+.subscribe__btn {
+  padding: 12px 14px;
+  font-style: normal;
+  right: 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  border: none;
+  cursor: pointer;
 }

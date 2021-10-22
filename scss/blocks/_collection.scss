@@ -17,8 +17,7 @@
   &__btn {
     position: relative;
     margin-top: 103px;
-    padding-right: 64px;
-    margin-left: 850px;
+    margin-left: 450px;
   }
   &__btn::after {
     position: absolute;
@@ -29,20 +28,5 @@
     top: 21px;
     background-image: url("/images/Arrow.svg");
     background-position: center;
-  }
-  .collection__price {
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 22px;
-    text-align: center;
-    color: $accent-color;
-  }
-  &__link {
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 17px;
-    text-align: center;
-    color: $dark;
   }
 }
