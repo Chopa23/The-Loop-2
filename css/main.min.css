@@ -561,7 +561,6 @@ body {
 }
 
 .models__price {
-  margin-top: 40px;
   font-weight: bold;
   font-size: 18px;
   line-height: 22px;
@@ -620,16 +619,16 @@ body {
   font-weight: 300;
   font-size: 12px;
   line-height: 15px;
-  text-align: center;
+  text-align: left;
   letter-spacing: 0.02em;
   color: #f9f6f1;
   text-align: left;
 }
 
 .subscribe__btn {
+  margin: 0;
   padding: 12px 14px;
   font-style: normal;
-  right: 0;
   font-weight: 500;
   font-size: 14px;
   line-height: 14px;
