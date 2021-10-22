@@ -1,0 +1,70 @@
+@import "../vars";
+.footer {
+  &__info {
+    padding-top: 73px;
+    padding-bottom: 78px;
+    background-color: $accent-dark;
+    color: $light;
+  }
+  &__inner {
+    display: grid;
+    grid-template-columns: 4fr 2fr 2fr 2fr 2fr;
+  }
+  &__text {
+    margin-right: 200px;
+  }
+  &__column {
+    margin-right: 80px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__copy-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    & a {
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 22px;
+      color: #212121;
+      text-decoration: none;
+    }
+  }
+  &__copy-inner p {
+    width: 50%;
+    &:last-child {
+      text-align: right;
+      padding-top: 35px 0;
+    }
+  }
+  & h3 {
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 12px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: $light;
+  }
+
+  & ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  & li {
+    padding: 0;
+    margin-bottom: 10px;
+  }
+
+  & ul a {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: #cbcfd4;
+    text-decoration: none;
+  }
+}
